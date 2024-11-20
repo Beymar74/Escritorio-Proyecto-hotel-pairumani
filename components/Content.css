@@ -1,0 +1,9 @@
+.contenido {
+  display: flex;
+  height: 795px;
+  padding: 20px 45px 20px 25px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}

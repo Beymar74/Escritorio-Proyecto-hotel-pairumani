@@ -1,0 +1,95 @@
+.headersini {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 12px 54px 12px 40px;
+  align-items: center;
+  gap: 61px;
+  border-bottom: 1px solid #e5e8eb;
+}
+.logini {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.pairumani {
+  width: 16px;
+  height: 18px;
+}
+.hotelsini {
+  align-self: stretch;
+  color: #171412;
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+}
+.cargo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.cargotext {
+  color: #171412;
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  width: 160px;
+  align-self: stretch;
+}
+.sesion {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
+}
+.nombreycargo {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  gap: 36px;
+}
+.cajacargo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.nombresini {
+  align-self: stretch;
+  color: #171412;
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+}
+.cargosini {
+  align-self: stretch;
+  color: rgba(23, 20, 18, 0.5);
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px; /* 150% */
+}
+.fotini {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.usuarini {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 20px;
+}
