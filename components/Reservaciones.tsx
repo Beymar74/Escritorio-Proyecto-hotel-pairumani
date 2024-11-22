@@ -7,7 +7,7 @@ const Reservaciones = () => {
   return (
     <div className="reservaciones">
       <div className="busquedini">
-        <div className="texto">
+        <div className="textobusquedini">
           <p className="texttitle">Lista de Reservaciones</p>
         </div>
         <div className="busqueda">
@@ -30,6 +30,8 @@ const Reservaciones = () => {
       </div>
 
       <div className="verpedidos">
+        <TarjetaPedido />
+        <TarjetaPedido />
         <TarjetaPedido />
         <TarjetaPedido />
         <TarjetaPedido />
