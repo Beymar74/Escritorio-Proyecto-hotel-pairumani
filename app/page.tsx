@@ -1,11 +1,11 @@
 import React from "react";
-import HeaderDesktop from "@/components/HeaderDesktop";
-import Content from "@/components/Content";
+import HeaderLogin from "@/components/HeaderLogin";
+import LoginContent from "@/components/LoginContent";
 export default function Home() {
   return (
     <div>
-      <HeaderDesktop/>
-      <Content/>
+      <HeaderLogin/>
+      <LoginContent/>
     </div>
   );
 }

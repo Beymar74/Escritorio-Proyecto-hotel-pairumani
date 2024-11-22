@@ -1,21 +1,24 @@
 .reservaciones {
   display: flex;
-  width: 960px;
-  height: 755px;
+  width: 1030px;
+  height: 640px;
   max-width: 960px;
-  padding: 11px 0px 20px 0px;
   flex-direction: column;
   align-items: flex-start;
-  background: rgba(232, 237, 245, 0.37);
+  gap: 20px;
+  color: #fff;
 }
 .busquedini {
   display: flex;
-  height: 50px;
-  justify-content: center;
+  width: 1030px;
+  height: 69px;
   align-items: center;
   gap: 8px;
   flex-shrink: 0;
   align-self: stretch;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.46);
+  background: rgba(135, 182, 161, 0.15);
 }
 .texttitle {
   width: 256px;
@@ -28,17 +31,18 @@
   font-weight: 700;
   line-height: 28px;
 }
-.texto {
+.textobusquedini {
   display: flex;
   width: 433px;
-  height: 50px;
-  padding-left: 30px;
-  align-items: left;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
 }
 .busqueda {
   display: flex;
   width: 320px;
-  height: 50px;
+  height: 70px;
   padding: 5px 0px;
   flex-direction: column;
   justify-content: center;
@@ -47,12 +51,14 @@
 .cajabusqueda {
   display: flex;
   width: 288px;
+  height: 40px;
   padding: 8px 16px 8px 8px;
   align-items: center;
   gap: 10px;
-  flex: 1 0 0;
+  flex-shrink: 0;
   border-radius: 12px;
   background: #f2ede8;
+  border: 1px solid rgba(0, 0, 0, 0.46);
 }
 .lupita {
   display: flex;
@@ -73,8 +79,9 @@
 .boton {
   display: flex;
   width: 181px;
-  height: 48px;
+  height: 70px;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 4px;
 }
@@ -99,9 +106,16 @@
 }
 .verpedidos {
   display: flex;
-  width: 960px;
-  height: 423px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 1030px;
+  height: 550px;
+  padding: 10px 0px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 12px 0px 0px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.46);
+  background: rgba(135, 182, 161, 0.15);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
