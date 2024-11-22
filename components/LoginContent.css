@@ -75,26 +75,15 @@
   align-self: stretch;
 }
 .rellenobotonini {
-    display: flex;
-    width: 448px;
-    height: 40;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 20px;
-    background: #003e09;
-    overflow: hidden;
-    color: #fff;
-    text-align: center;
-    font-feature-settings: "dlig" on;
-    text-overflow: ellipsis;
-    font-family: "Plus Jakarta Sans";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 21px; /* 150% */
-    margin: 0;
+  display: flex;
+  width: 448px;
+  height: 40px;
+  min-width: 84px;
+  max-width: 480px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #216e3d;
 }
 .textoingresar {
   width: 57px;
@@ -110,7 +99,7 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 21px; /* 150% */
+  line-height: 21px;
 }
 
 .tex {
@@ -120,7 +109,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; 
+  line-height: 24px;
   margin-bottom: 8px;
 }
 
@@ -128,7 +117,7 @@
   height: 56px;
   width: 448px;
   padding: 15px;
-  border: 1px solid #e5e0db; 
+  border: 1px solid #e5e0db;
   border-radius: 8px;
   margin-bottom: 20px;
   color: #877363;
@@ -137,16 +126,14 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; 
-  background-color: #fff; 
+  line-height: 24px;
+  background-color: #fff;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-
 .form1 input:focus {
-  border-color: #2ecc71; 
-  background-color: #f9f9f9; 
-  box-shadow: 0 0 5px rgba(46, 204, 113, 0.5); 
-  outline: none; 
+  border-color: #2ecc71;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 5px rgba(46, 204, 113, 0.5);
+  outline: none;
 }
-
