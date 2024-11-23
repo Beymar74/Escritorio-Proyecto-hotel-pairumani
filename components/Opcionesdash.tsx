@@ -2,11 +2,11 @@ import React from "react";
 import "./Opciones.css";
 import Image from "next/image";
 import Link from "next/link";
-const Opciones = () => {
+const Opcionesdash = () => {
   return (
     <div className="opcioninis">
       <Link href={"/reservaciones"} passHref>
-        <button type="submit" className="cajaopcion">
+        <button type="submit" className="cajaopcionalter">
           <div className="subcajaopcion">
             <div className="imagen">
               <Image
@@ -25,7 +25,7 @@ const Opciones = () => {
       </Link>
 
       <Link href={"/dashboard"} passHref>
-        <button type="submit" className="cajaopcionalter">
+        <button type="submit" className="cajaopcion">
           <div className="subcajaopcion">
             <div className="imagen">
               <Image
@@ -84,4 +84,4 @@ const Opciones = () => {
   );
 };
 
-export default Opciones;
+export default Opcionesdash;
