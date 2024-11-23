@@ -22,7 +22,7 @@ const LoginContent = () => {
         <p className="textolvidar">¿Olvidó su contraseña?</p>
       </div>
       <div className="botoniniciars">
-        <Link href={"/pantallaInicio"} passHref>
+        <Link href={"/reservaciones"} passHref>
           <button type="submit" className="rellenobotonini">
           <p className="textoingresar">Ingresar</p>
           </button>
