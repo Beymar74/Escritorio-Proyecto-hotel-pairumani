@@ -1,7 +1,41 @@
-import React from "react";
+"use client";
+
 import "./LoginContent.css";
-import Link from "next/link";
+import { useAuthStore } from "@/app/store";
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
+
 const LoginContent = () => {
+  const { usuarios, fetchUsuarios } = useAuthStore();
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const router = useRouter();
+
+  useEffect(() => {
+    fetchUsuarios();
+  }, [fetchUsuarios]);
+
+  const handleUsernameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setUsername(e.target.value);
+  };
+
+  const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setPassword(e.target.value);
+  };
+
+  const logear = (e: React.FormEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    const usuarioEncontrado = usuarios.find(
+      (usuario) => usuario.userName === username
+    );
+
+    if (usuarioEncontrado && usuarioEncontrado.password === password) {
+      router.push("/reservaciones"); 
+    } else {
+      alert("Usuario o contraseña incorrectos");
+    }
+  };
+
   return (
     <div className="contenidologin">
       <div className="bienvenidotexto">
@@ -14,19 +48,27 @@ const LoginContent = () => {
       </div>
       <form className="form1">
         <h1 className="tex">Usuario</h1>
-        <input type="email" placeholder="Ingrese Usuario" />
+        <input
+          type="text"
+          placeholder="Nombre de usuario"
+          value={username}
+          onChange={handleUsernameChange}
+        />
         <h1 className="tex">Contraseña</h1>
-        <input type="password" placeholder="Ingrese Contraseña" />
+        <input
+          type="password"
+          placeholder="Contraseña"
+          value={password}
+          onChange={handlePasswordChange}
+        />
+        <div className="botoniniciars">
+          <button type="submit" className="rellenobotonini" onClick={logear}>
+            <p className="textoingresar">Ingresar</p>
+          </button>
+        </div>
       </form>
       <div className="olvidarcontra">
         <p className="textolvidar">¿Olvidó su contraseña?</p>
-      </div>
-      <div className="botoniniciars">
-        <Link href={"/reservaciones"} passHref>
-          <button type="submit" className="rellenobotonini">
-          <p className="textoingresar">Ingresar</p>
-          </button>
-        </Link>
       </div>
     </div>
   );
