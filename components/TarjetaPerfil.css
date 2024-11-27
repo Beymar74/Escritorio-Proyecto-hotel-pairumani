@@ -1,0 +1,224 @@
+.backTarjeta {
+  display: flex;
+  height: 570px;
+  padding: 10px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 12px;
+  background: #e0eaeb;
+  border: 1px solid rgba(0, 0, 0, 0.46);
+}
+.Perfilini {
+  display: flex;
+  height: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+.textoperfilini {
+  align-self: stretch;
+  color: #0d141c;
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.infodeperfil {
+  display: flex;
+  height: 75px;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.infodeperfil {
+  display: flex;
+  height: 75px;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+.imagendeperfil {
+  display: flex;
+  width: 60px;
+  height: 71px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.personarandom {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 100px;
+}
+.nombredeperperfil {
+  display: flex;
+  height: 71px;
+  padding: 16px 0px 20px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+.nombredepersoran {
+  align-self: stretch;
+  color: #0d141c;
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px; /* 120% */
+}
+.barrabusqueda {
+  display: flex;
+  width: 288px;
+  height: 40px;
+  padding: 8px 16px 8px 8px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: #f2ede8;
+}
+.contenedorlupita {
+  display: flex;
+  width: 24px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.imglupita {
+  height: 24px;
+  flex: 1 0 0;
+  fill: #966e4f;
+}
+.textobusqueda {
+  color: #966e4f;
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.continfesta {
+  display: flex;
+  height: 40px;
+  padding-left: 9px;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+.contimaesta {
+  display: flex;
+  width: 19px;
+  height: 24px;
+  padding-top: 4px;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.imallamada {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+.mediocontacto {
+  display: flex;
+  width: 137px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.textomediocontacto {
+  align-self: stretch;
+  color: rgba(13, 20, 28, 0.7);
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 200% */
+}
+.conthabitacion {
+  display: flex;
+  height: 24px;
+  padding-left: 44px;
+  align-items: center;
+  gap: 56px;
+  flex: 1 0 0;
+}
+.tipohabitacion {
+  width: 100px;
+  align-self: stretch;
+  color: rgba(13, 20, 28, 0.4);
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.numerohabitacion {
+  width: 100px;
+  align-self: stretch;
+  color: rgba(13, 20, 28, 0.4);
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.tiptiphab {
+  width: 100px;
+  align-self: stretch;
+  color: #0d141c;
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 184.615% */
+}
+.numnumhab {
+  width: 118px;
+  align-self: stretch;
+  color: #0d141c;
+  font-feature-settings: "dlig" on;
+  font-family: "Plus Jakarta Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 184.615% */
+}
+.contenedortarjetasdepedido {
+  display: flex;
+  height: 290px;
+  padding: 5px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  align-self: stretch;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
