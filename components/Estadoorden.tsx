@@ -1,69 +1,117 @@
-import React from "react";
-import "./Estadoorden.css";
-import Tarjetaenprepa from "./Tarjetaenprepa";
-import Barraprogreso from "./Barraprogreso";
-import Tarjetalista from "./Tarjetalista";
-import Tarjetaentregada from "./Tarjetaentregada";
-import Barprolisto from "./Barprolisto";
-import Barproentre from "./Barproentre";
+"use client";
 
-const Estadoorden = () => {
+import React, { useEffect, useState } from "react";
+import "./Estadoorden.css";
+import Tarjetaplatillo from "./Tarjetaplatillo";
+
+type PedidoType = {
+  id: string;
+  username: string;
+  nhabitacionOpersonas: string;
+  estado: "enPreparacion" | "listo" | "entregado";
+  ordenpla: {
+    titulo: string;
+    plaimagen: string;
+    extra?: string;
+    cantidad: number;
+  }[];
+};
+
+type PedidosState = {
+  enPreparacion: PedidoType[];
+  listo: PedidoType[];
+  entregado: PedidoType[];
+};
+
+const Estadoorden: React.FC = () => {
+  const [pedidos, setPedidos] = useState<PedidosState>({
+    enPreparacion: [],
+    listo: [],
+    entregado: [],
+  });
+
+  useEffect(() => {
+    const fetchPedidos = async () => {
+      try {
+        const response = await fetch("https://673629d5aafa2ef2222fb0a8.mockapi.io/pedidocon");
+        if (!response.ok) throw new Error("Error al obtener los datos de la API");
+
+        const data: PedidoType[] = await response.json();
+
+        // Clasificar pedidos por estado
+        const enPreparacion = data.filter((pedido) => pedido.estado === "enPreparacion");
+        const listo = data.filter((pedido) => pedido.estado === "listo");
+        const entregado = data.filter((pedido) => pedido.estado === "entregado");
+
+        setPedidos({ enPreparacion, listo, entregado });
+      } catch (error) {
+        console.error("Error al obtener los pedidos:", error);
+      }
+    };
+
+    fetchPedidos();
+  }, []);
+
+  const movePedido = (id: string, currentEstado: "enPreparacion" | "listo" | "entregado") => {
+    setPedidos((prev) => {
+      // Encuentra el pedido que se debe mover
+      let pedidoToMove: PedidoType | undefined;
+      const newState: PedidosState = { ...prev };
+
+      if (currentEstado === "enPreparacion") {
+        pedidoToMove = newState.enPreparacion.find((pedido) => pedido.id === id);
+        if (pedidoToMove) {
+          newState.enPreparacion = newState.enPreparacion.filter((pedido) => pedido.id !== id);
+          newState.listo.push({ ...pedidoToMove, estado: "listo" });
+        }
+      } else if (currentEstado === "listo") {
+        pedidoToMove = newState.listo.find((pedido) => pedido.id === id);
+        if (pedidoToMove) {
+          newState.listo = newState.listo.filter((pedido) => pedido.id !== id);
+          newState.entregado.push({ ...pedidoToMove, estado: "entregado" });
+        }
+      }
+
+      return newState;
+    });
+  };
+
   return (
     <div className="estado">
       <div className="apartado">
-        <p className="titapartado">Estado de Ordenes</p>
-      </div>
-
-      <div className="apartado">
-        <div className="inmovil">
-          <div className="contenedorbotones">
-            <div className="botoncinisini">
-              <p className="textobotonsini">Desayuno</p>
-            </div>
-            <div className="botoncinisini">
-              <p className="textobotonsini">Almuerzo</p>
-            </div>
-            <div className="botoncinisini">
-              <p className="textobotonsini">Cena</p>
-            </div>
-          </div>
-        </div>
+        <p className="titapartado">Estado de Órdenes</p>
       </div>
 
       <div className="movil">
+        {/* En Preparación */}
         <div className="faseestado">
-          <p className="textofase">En Preparacion</p>
-        </div>
-        <div className="contenedorDeTarjetas">
+          <p className="textofase">En Preparación</p>
           <div className="contenedorDeTarjetas">
-            <Tarjetaenprepa />
-            <Tarjetaenprepa />
-            <Tarjetaenprepa />
-            <Tarjetaenprepa />
-            <Tarjetaenprepa />
+            {pedidos.enPreparacion.map((pedido) => (
+              <Tarjetaplatillo key={pedido.id} pedido={pedido} movePedido={movePedido} />
+            ))}
           </div>
         </div>
-        <Barraprogreso />
 
+        {/* Listo */}
         <div className="faseestado">
           <p className="textofase">Listo</p>
+          <div className="contenedorDeTarjetas">
+            {pedidos.listo.map((pedido) => (
+              <Tarjetaplatillo key={pedido.id} pedido={pedido} movePedido={movePedido} />
+            ))}
+          </div>
         </div>
-        <div className="contenedorDeTarjetas">
-          <Tarjetalista />
-          <Tarjetalista />
-          <Tarjetalista />
-          <Tarjetalista />
-        </div>
-        <Barprolisto />
 
+        {/* Entregado */}
         <div className="faseestado">
           <p className="textofase">Entregado</p>
+          <div className="contenedorDeTarjetas">
+            {pedidos.entregado.map((pedido) => (
+              <Tarjetaplatillo key={pedido.id} pedido={pedido} movePedido={movePedido} />
+            ))}
+          </div>
         </div>
-        <div className="contenedorDeTarjetas">
-          <Tarjetaentregada />
-          <Tarjetaentregada />
-        </div>
-        <Barproentre />
       </div>
     </div>
   );
