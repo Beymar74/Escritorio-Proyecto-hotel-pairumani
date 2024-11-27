@@ -9,10 +9,14 @@ const LoginContent = () => {
   const { usuarios, fetchUsuarios } = useAuthStore();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const { guardarName, guardarAvatar } = useAuthStore();
+
   const router = useRouter();
 
   useEffect(() => {
-    fetchUsuarios();
+    fetchUsuarios().then(() => {
+      console.log("Usuarios cargados:", usuarios);
+    });
   }, [fetchUsuarios]);
 
   const handleUsernameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -30,7 +34,9 @@ const LoginContent = () => {
     );
 
     if (usuarioEncontrado && usuarioEncontrado.password === password) {
-      router.push("/reservaciones"); 
+      guardarName(usuarioEncontrado.name);
+      guardarAvatar(usuarioEncontrado.avatar); // Guardar el avatar del usuario logeado
+      router.push("/reservaciones");
     } else {
       alert("Usuario o contraseña incorrectos");
     }
