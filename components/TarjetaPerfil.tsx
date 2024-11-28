@@ -43,7 +43,7 @@ const TarjetaPerfil: React.FC = () => {
       const rawData = await response.json();
 
       const groupedData: Usuario[] = rawData.reduce((acc: Usuario[], curr: any) => {
-        const existingUser = acc.find((user) => user.username === curr.username);
+        const existingUser = acc.find((user) => user.email === curr.correo);
 
         if (existingUser) {
           existingUser.orders.push({
@@ -87,15 +87,12 @@ const TarjetaPerfil: React.FC = () => {
   };
 
   useEffect(() => {
-   
     fetchUsers();
 
-   
     const interval = setInterval(() => {
       fetchUsers();
     }, 5000);
 
- 
     return () => clearInterval(interval);
   }, []);
 
@@ -108,8 +105,7 @@ const TarjetaPerfil: React.FC = () => {
       </div>
 
       {users.map((user) => (
-        <div key={user.username} className="backTarjeta">
-         
+        <div key={`${user.email}-${user.username}`} className="backTarjeta">
           <div className="infodeperfil">
             <div className="imagendeperfil">
               <Image
@@ -123,18 +119,7 @@ const TarjetaPerfil: React.FC = () => {
             <div className="nombredeperperfil">
               <p className="nombredepersoran">{user.username}</p>
             </div>
-            <div className="barrabusqueda">
-              <div className="contenedorlupita">
-                <Image
-                  className="imalupita"
-                  src="/Vector - 0.png"
-                  width={24}
-                  height={24}
-                  alt="Buscar"
-                />
-              </div>
-              <p className="textobusqueda">Buscar Fecha</p>
-            </div>
+            
           </div>
 
           <div className="continfesta">
@@ -151,21 +136,18 @@ const TarjetaPerfil: React.FC = () => {
               <p className="textomediocontacto">{user.email}</p>
             </div>
             <div className="conthabitacion">
-              <p className="tipohabitacion">{user.habitacionTipo}</p>
-              <p className="numerohabitacion">{user.habitacionNumero}</p>
+              
             </div>
           </div>
 
-         
           <div className="Perfilini">
             <p className="textoperfilini">Órdenes</p>
           </div>
 
-          
           <div className="contenedortarjetasdepedido">
             {user.orders.map((order) => (
               <Tarjlistapedidos
-                key={order.orden}
+                key={`${order.orden}-${user.email}`}
                 order={order}
                 user={user}
               />

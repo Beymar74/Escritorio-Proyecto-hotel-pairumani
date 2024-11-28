@@ -81,6 +81,7 @@ const Tarjlistapedidos: React.FC<{ order: Orden; user: User }> = ({ order, user 
       <div className="divdatosdelpedido">
           <p className="fecha">{`${fecha}, ${hora}`}</p>
           <p className="textoverde">Entrega: {lugar}</p>
+          <p className="textoverde">#Número:{nhabitacionOpersonas}</p>
           <p className="textoverde">Total de la orden: Bs. {total}</p>
           
 
