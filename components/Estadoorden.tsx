@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import React, { useEffect, useState } from "react";
 import "./Estadoorden.css";
 import Tarjetaplatillo from "./Tarjetaplatillo";
@@ -23,6 +22,8 @@ type PedidosState = {
   entregado: PedidoType[];
 };
 
+const MAX_ITEMS_PER_BLOCK = 10;
+
 const Estadoorden: React.FC = () => {
   const [pedidos, setPedidos] = useState<PedidosState>({
     enPreparacion: [],
@@ -38,7 +39,6 @@ const Estadoorden: React.FC = () => {
 
         const data: PedidoType[] = await response.json();
 
-        // Clasificar pedidos por estado
         const enPreparacion = data.filter((pedido) => pedido.estado === "enPreparacion");
         const listo = data.filter((pedido) => pedido.estado === "listo");
         const entregado = data.filter((pedido) => pedido.estado === "entregado");
@@ -54,33 +54,33 @@ const Estadoorden: React.FC = () => {
 
   const movePedido = (id: string, currentEstado: keyof PedidosState) => {
     setPedidos((prev) => {
-      // Copia inmutable del estado actual
       const newState = {
         enPreparacion: [...prev.enPreparacion],
         listo: [...prev.listo],
         entregado: [...prev.entregado],
       };
-  
-      // Encuentra y elimina el pedido del estado actual
+
       const pedidoIndex = newState[currentEstado].findIndex((pedido) => pedido.id === id);
-      if (pedidoIndex === -1) return prev; // Si no lo encuentra, no hace nada
-  
-      const [pedidoToMove] = newState[currentEstado].splice(pedidoIndex, 1); // Elimina y guarda el pedido
-  
-      // Agrega el pedido al siguiente estado
-      if (currentEstado === "enPreparacion") {
+      if (pedidoIndex === -1) return prev;
+
+      const [pedidoToMove] = newState[currentEstado].splice(pedidoIndex, 1);
+
+      if (currentEstado === "enPreparacion" && newState.listo.length < MAX_ITEMS_PER_BLOCK) {
         newState.listo.push({ ...pedidoToMove, estado: "listo" });
-      } else if (currentEstado === "listo") {
+      } else if (currentEstado === "listo" && newState.entregado.length < MAX_ITEMS_PER_BLOCK) {
         newState.entregado.push({ ...pedidoToMove, estado: "entregado" });
+      } else {
+        alert("¡El bloque está lleno! No se pueden agregar más pedidos.");
+        return prev; // No hacemos cambios si el bloque está lleno
       }
-  
-      return newState; // Devuelve el nuevo estado
+
+      return newState;
     });
   };
-  
-  
-  
 
+  const calculateProgress = (block: keyof PedidosState) => {
+    return Math.min((pedidos[block].length / MAX_ITEMS_PER_BLOCK) * 100, 100);
+  };
 
   return (
     <div className="estado">
@@ -91,7 +91,13 @@ const Estadoorden: React.FC = () => {
       <div className="movil">
         {/* En Preparación */}
         <div className="faseestado">
-          <p className="textofase">En Preparación</p>
+          <p className="textofase">En Preparación ({pedidos.enPreparacion.length}/{MAX_ITEMS_PER_BLOCK})</p>
+          <div className="barraProgreso">
+            <div
+              className="progreso"
+              style={{ width: `${calculateProgress("enPreparacion")}%` }}
+            ></div>
+          </div>
           <div className="contenedorDeTarjetas">
             {pedidos.enPreparacion.map((pedido) => (
               <Tarjetaplatillo key={pedido.id} pedido={pedido} movePedido={movePedido} />
@@ -101,7 +107,13 @@ const Estadoorden: React.FC = () => {
 
         {/* Listo */}
         <div className="faseestado">
-          <p className="textofase">Listo</p>
+          <p className="textofase">Listo ({pedidos.listo.length}/{MAX_ITEMS_PER_BLOCK})</p>
+          <div className="barraProgreso">
+            <div
+              className="progreso"
+              style={{ width: `${calculateProgress("listo")}%` }}
+            ></div>
+          </div>
           <div className="contenedorDeTarjetas">
             {pedidos.listo.map((pedido) => (
               <Tarjetaplatillo key={pedido.id} pedido={pedido} movePedido={movePedido} />
@@ -111,7 +123,13 @@ const Estadoorden: React.FC = () => {
 
         {/* Entregado */}
         <div className="faseestado">
-          <p className="textofase">Entregado</p>
+          <p className="textofase">Entregado ({pedidos.entregado.length}/{MAX_ITEMS_PER_BLOCK})</p>
+          <div className="barraProgreso">
+            <div
+              className="progreso"
+              style={{ width: `${calculateProgress("entregado")}%` }}
+            ></div>
+          </div>
           <div className="contenedorDeTarjetas">
             {pedidos.entregado.map((pedido) => (
               <Tarjetaplatillo key={pedido.id} pedido={pedido} movePedido={movePedido} />

@@ -73,3 +73,17 @@
   background-color: #999; /* Color del scroll al pasar el mouse */
 }
 
+.barraProgreso {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progreso {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
+}
