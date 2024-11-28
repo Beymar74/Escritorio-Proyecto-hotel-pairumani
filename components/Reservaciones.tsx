@@ -5,10 +5,7 @@ const Reservaciones = () => {
   return (
     <div className="background">
       <TarjetaPerfil />
-      <TarjetaPerfil />
-      <TarjetaPerfil />
-      <TarjetaPerfil />
-      <TarjetaPerfil />
+
     </div>
   );
 };
