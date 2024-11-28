@@ -33,7 +33,7 @@ const Estadoorden: React.FC = () => {
   useEffect(() => {
     const fetchPedidos = async () => {
       try {
-        const response = await fetch("https://673629d5aafa2ef2222fb0a8.mockapi.io/pedidocon");
+        const response = await fetch("https://673629d5aafa2ef2222fb0a8.mockapi.io/estado");
         if (!response.ok) throw new Error("Error al obtener los datos de la API");
 
         const data: PedidoType[] = await response.json();
@@ -52,29 +52,35 @@ const Estadoorden: React.FC = () => {
     fetchPedidos();
   }, []);
 
-  const movePedido = (id: string, currentEstado: "enPreparacion" | "listo" | "entregado") => {
+  const movePedido = (id: string, currentEstado: keyof PedidosState) => {
     setPedidos((prev) => {
-      // Encuentra el pedido que se debe mover
-      let pedidoToMove: PedidoType | undefined;
-      const newState: PedidosState = { ...prev };
-
+      // Copia inmutable del estado actual
+      const newState = {
+        enPreparacion: [...prev.enPreparacion],
+        listo: [...prev.listo],
+        entregado: [...prev.entregado],
+      };
+  
+      // Encuentra y elimina el pedido del estado actual
+      const pedidoIndex = newState[currentEstado].findIndex((pedido) => pedido.id === id);
+      if (pedidoIndex === -1) return prev; // Si no lo encuentra, no hace nada
+  
+      const [pedidoToMove] = newState[currentEstado].splice(pedidoIndex, 1); // Elimina y guarda el pedido
+  
+      // Agrega el pedido al siguiente estado
       if (currentEstado === "enPreparacion") {
-        pedidoToMove = newState.enPreparacion.find((pedido) => pedido.id === id);
-        if (pedidoToMove) {
-          newState.enPreparacion = newState.enPreparacion.filter((pedido) => pedido.id !== id);
-          newState.listo.push({ ...pedidoToMove, estado: "listo" });
-        }
+        newState.listo.push({ ...pedidoToMove, estado: "listo" });
       } else if (currentEstado === "listo") {
-        pedidoToMove = newState.listo.find((pedido) => pedido.id === id);
-        if (pedidoToMove) {
-          newState.listo = newState.listo.filter((pedido) => pedido.id !== id);
-          newState.entregado.push({ ...pedidoToMove, estado: "entregado" });
-        }
+        newState.entregado.push({ ...pedidoToMove, estado: "entregado" });
       }
-
-      return newState;
+  
+      return newState; // Devuelve el nuevo estado
     });
   };
+  
+  
+  
+
 
   return (
     <div className="estado">
