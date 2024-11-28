@@ -1,13 +1,14 @@
 import React from "react";
-import HeaderDesktop from "@/components/HeaderDesktop";
-import Contenidoestado from "@/components/Contenidoestado";
-const page = () => {
+import HeaderDesktop from "@/components/HeaderDesktop"; // Asegúrate de que la ruta sea correcta
+import Estadoorden from "@/components/Estadoorden"; // Cambiado a Estadoorden para reflejar el componente actualizado
+
+const Page = () => {
   return (
     <div>
-      <HeaderDesktop />
-      <Contenidoestado/>
+      <HeaderDesktop /> {/* Encabezado principal */}
+      <Estadoorden /> {/* Componente principal que gestiona las órdenes */}
     </div>
   );
 };
 
-export default page;
+export default Page;
