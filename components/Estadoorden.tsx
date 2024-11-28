@@ -9,6 +9,7 @@ type PedidoType = {
   username: string;
   nhabitacionOpersonas: string;
   estado: "enPreparacion" | "listo" | "entregado";
+  lugar: string;
   ordenpla: {
     titulo: string;
     plaimagen: string;
