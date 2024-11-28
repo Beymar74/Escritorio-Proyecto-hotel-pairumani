@@ -123,18 +123,7 @@ const TarjetaPerfil: React.FC = () => {
             <div className="nombredeperperfil">
               <p className="nombredepersoran">{user.username}</p>
             </div>
-            <div className="barrabusqueda">
-              <div className="contenedorlupita">
-                <Image
-                  className="imalupita"
-                  src="/Vector - 0.png"
-                  width={24}
-                  height={24}
-                  alt="Buscar"
-                />
-              </div>
-              <p className="textobusqueda">Buscar Fecha</p>
-            </div>
+            
           </div>
 
           <div className="continfesta">
@@ -151,8 +140,6 @@ const TarjetaPerfil: React.FC = () => {
               <p className="textomediocontacto">{user.email}</p>
             </div>
             <div className="conthabitacion">
-              <p className="tipohabitacion">{user.habitacionTipo}</p>
-              <p className="numerohabitacion">{user.habitacionNumero}</p>
             </div>
           </div>
 

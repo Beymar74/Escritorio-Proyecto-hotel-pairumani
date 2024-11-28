@@ -8,7 +8,9 @@ type PedidoProps = {
     id: string;
     username: string;
     nhabitacionOpersonas: string;
+    lugar: string;
     estado: "enPreparacion" | "listo" | "entregado";
+    
     ordenpla: {
       titulo: string;
       plaimagen: string;
@@ -43,7 +45,7 @@ const Tarjetaplatillo: React.FC<PedidoProps> = ({ pedido, movePedido }) => {
       {/* Información del pedido */}
       <div className="pedido-info">
         <h3>Cliente: {pedido.username}</h3>
-        <p>Habitación: {pedido.nhabitacionOpersonas}</p>
+        <p>{pedido.lugar}: {pedido.nhabitacionOpersonas}</p>
       </div>
 
       </div>

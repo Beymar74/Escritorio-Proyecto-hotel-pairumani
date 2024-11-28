@@ -38,10 +38,11 @@ const Tarjlistapedidos: React.FC<{ order: Orden; user: User }> = ({ order, user 
       lugar,
       fecha,
       hora,
+      estado:"enPreparacion",
       total,
       id: orden.toString(),
       imagenperfil: user.imagenPerfil,
-      nhabitacionOpersonas: lugar === "Comedor" ? nhabitacionOpersonas : "-----",
+      nhabitacionOpersonas: nhabitacionOpersonas,
       ordenpla: platos,
     };
 
@@ -81,6 +82,7 @@ const Tarjlistapedidos: React.FC<{ order: Orden; user: User }> = ({ order, user 
       <div className="divdatosdelpedido">
           <p className="fecha">{`${fecha}, ${hora}`}</p>
           <p className="textoverde">Entrega: {lugar}</p>
+          <p className="textoverde">#Número: {nhabitacionOpersonas}</p>
           <p className="textoverde">Total de la orden: Bs. {total}</p>
           
 
