@@ -78,6 +78,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 12px;
+  margin-left: 30px;
+  margin-top: 15px;
 }
 .divpados {
   display: flex;
@@ -86,7 +89,7 @@
   align-self: stretch;
 }
 .textoverde {
-  width: 123px;
+  width: 183px;
   height: 18.249px;
   color: rgba(0, 0, 0, 0.5);
   font-family: "Plus Jakarta Sans";
@@ -94,6 +97,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 12px;
 }
 .textonegro {
   width: 123px;
