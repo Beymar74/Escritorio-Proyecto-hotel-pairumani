@@ -13,7 +13,7 @@ data = {
     'Cantidad Pedida': np.random.randint(5, 50, 500)
 }
 df = pd.DataFrame(data)
-
+df.shape 
 # Convertir columnas categóricas a variables dummies
 df_encoded = pd.get_dummies(df.drop('Cantidad Pedida', axis=1))
 X = df_encoded
