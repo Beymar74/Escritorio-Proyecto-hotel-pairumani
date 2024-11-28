@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useState } from "react";
 import "./Estadoorden.css";
+import Opcionesestado from './Opcionesestado'
 import Tarjetaplatillo from "./Tarjetaplatillo";
 
 type PedidoType = {
@@ -87,11 +88,13 @@ const Estadoorden: React.FC = () => {
       <div className="apartado">
         <p className="titapartado">Estado de Órdenes</p>
       </div>
+      <div className="flex">
+      
 
       <div className="movil">
         {/* En Preparación */}
         <div className="faseestado">
-          <p className="textofase">En Preparación ({pedidos.enPreparacion.length}/{MAX_ITEMS_PER_BLOCK})</p>
+          <p className="textofase">En Preparación</p>
           <div className="barraProgreso">
             <div
               className="progreso"
@@ -107,7 +110,7 @@ const Estadoorden: React.FC = () => {
 
         {/* Listo */}
         <div className="faseestado">
-          <p className="textofase">Listo ({pedidos.listo.length}/{MAX_ITEMS_PER_BLOCK})</p>
+          <p className="textofase">Listo </p>
           <div className="barraProgreso">
             <div
               className="progreso"
@@ -123,7 +126,7 @@ const Estadoorden: React.FC = () => {
 
         {/* Entregado */}
         <div className="faseestado">
-          <p className="textofase">Entregado ({pedidos.entregado.length}/{MAX_ITEMS_PER_BLOCK})</p>
+          <p className="textofase">Entregado </p>
           <div className="barraProgreso">
             <div
               className="progreso"
@@ -137,6 +140,8 @@ const Estadoorden: React.FC = () => {
           </div>
         </div>
       </div>
+      </div>
+
     </div>
   );
 };
