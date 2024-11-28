@@ -1,122 +1,16 @@
-.reservaciones {
+.background {
   display: flex;
   width: 1030px;
   height: 640px;
   max-width: 960px;
-  flex-direction: column;
-  align-items: flex-start;
+  padding: 20px;
   gap: 20px;
-  color: #fff;
-}
-.busquedini {
-  display: flex;
-  width: 1030px;
-  height: 69px;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-  align-self: stretch;
-  border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.46);
-  background: rgba(135, 182, 161, 0.15);
-}
-.texttitle {
-  width: 256px;
-  flex-shrink: 0;
-  color: #0d141c;
-  font-feature-settings: "dlig" on;
-  font-family: "Plus Jakarta Sans";
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 28px;
-}
-.textobusquedini {
-  display: flex;
-  width: 433px;
-  height: 70px;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 25px;
-}
-.busqueda {
-  display: flex;
-  width: 320px;
-  height: 70px;
-  padding: 5px 0px;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-.cajabusqueda {
-  display: flex;
-  width: 288px;
-  height: 40px;
-  padding: 8px 16px 8px 8px;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
   border-radius: 12px;
-  background: #f2ede8;
-  border: 1px solid rgba(0, 0, 0, 0.46);
-}
-.lupita {
-  display: flex;
-  width: 24px;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-}
-.textocaja {
-  color: #966e4f;
-  font-feature-settings: "dlig" on;
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-.boton {
-  display: flex;
-  width: 181px;
-  height: 70px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-}
-.botonrelleno {
-  display: flex;
-  height: 48px;
-  padding: 0px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-  border-radius: 15px;
-  background: #003e09;
-}
-.textoboton {
-  color: #fff;
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px;
-}
-.verpedidos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  width: 1030px;
-  height: 550px;
-  padding: 10px 10px;
-  justify-content: flex-start;
-  align-items: flex-start;
-  border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.46);
-  background: rgba(135, 182, 161, 0.15);
+  background: rgba(232, 237, 245, 0.37);
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: none;
+  border: 1px solid rgba(0, 0, 0, 0.46);
 }

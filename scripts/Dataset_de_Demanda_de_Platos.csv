@@ -1,0 +1,501 @@
+Día de la Semana,Temporada,Tipo de Comida,Nombre del Plato,Cantidad Pedida
+Lunes,Alta,Cena,Papas a la Francesa,39
+Sábado,Media,Desayuno,Pan Dulce,26
+Martes,Media,Almuerzo,Piquemacho,18
+Miércoles,Baja,Desayuno,Jugo de Naranja,18
+Viernes,Media,Desayuno,Hot Cakes,18
+Martes,Media,Desayuno,Desayuno Americano,14
+Jueves,Media,Almuerzo,Silpancho,26
+Miércoles,Alta,Almuerzo,Chicharrón,36
+Sábado,Baja,Almuerzo,Conejo Falso,9
+Sábado,Baja,Almuerzo,Conejo Falso,20
+Domingo,Baja,Almuerzo,Chicharrón,16
+Sábado,Alta,Cena,Hamburguesa,45
+Miércoles,Media,Desayuno,Cereales,18
+Miércoles,Alta,Desayuno,Cereales,30
+Viernes,Media,Desayuno,Desayuno Americano,12
+Viernes,Media,Almuerzo,Silpancho,12
+Martes,Baja,Almuerzo,Conejo Falso,14
+Viernes,Baja,Desayuno,Cereales,14
+Jueves,Baja,Almuerzo,Silpancho,6
+Sábado,Alta,Almuerzo,Silpancho,26
+Jueves,Baja,Almuerzo,Conejo Falso,7
+Viernes,Baja,Desayuno,Pan Dulce,7
+Martes,Baja,Desayuno,Desayuno Americano,18
+Domingo,Alta,Desayuno,Jugo de Naranja,39
+Miércoles,Baja,Desayuno,Cereales,18
+Martes,Baja,Desayuno,Jugo de Naranja,11
+Sábado,Media,Almuerzo,Piquemacho,25
+Domingo,Baja,Cena,Pizza,12
+Martes,Alta,Almuerzo,Conejo Falso,40
+Jueves,Media,Cena,Pollo Frito,27
+Lunes,Media,Cena,Pollo Frito,28
+Lunes,Media,Cena,Hamburguesa,30
+Sábado,Baja,Cena,Papas a la Francesa,11
+Martes,Baja,Cena,Espagueti,10
+Miércoles,Alta,Cena,Papas a la Francesa,34
+Domingo,Baja,Almuerzo,Chicharrón,14
+Jueves,Baja,Cena,Hamburguesa,15
+Lunes,Baja,Almuerzo,Silpancho,18
+Sábado,Baja,Almuerzo,Silpancho,19
+Martes,Baja,Desayuno,Desayuno Americano,9
+Sábado,Alta,Almuerzo,Piquemacho,48
+Domingo,Media,Desayuno,Hot Cakes,24
+Martes,Alta,Desayuno,Hot Cakes,27
+Miércoles,Media,Desayuno,Cereales,24
+Domingo,Media,Desayuno,Jugo de Naranja,29
+Jueves,Media,Desayuno,Cereales,14
+Miércoles,Media,Desayuno,Hot Cakes,26
+Domingo,Media,Almuerzo,Silpancho,27
+Martes,Alta,Desayuno,Desayuno Americano,33
+Domingo,Media,Cena,Hamburguesa,23
+Viernes,Baja,Desayuno,Cereales,12
+Domingo,Baja,Desayuno,Desayuno Americano,14
+Viernes,Alta,Almuerzo,Piquemacho,45
+Lunes,Alta,Cena,Hamburguesa,40
+Domingo,Media,Cena,Papas a la Francesa,13
+Lunes,Media,Desayuno,Hot Cakes,17
+Sábado,Baja,Cena,Hamburguesa,12
+Lunes,Baja,Almuerzo,Conejo Falso,9
+Martes,Alta,Almuerzo,Conejo Falso,49
+Domingo,Media,Desayuno,Pan Dulce,24
+Lunes,Media,Desayuno,Cereales,12
+Miércoles,Alta,Cena,Hamburguesa,49
+Sábado,Alta,Desayuno,Pan Dulce,41
+Martes,Alta,Almuerzo,Conejo Falso,36
+Martes,Baja,Almuerzo,Chicharrón,7
+Miércoles,Alta,Almuerzo,Silpancho,48
+Sábado,Media,Almuerzo,Pampaku,12
+Jueves,Media,Desayuno,Cereales,25
+Viernes,Baja,Desayuno,Jugo de Naranja,12
+Viernes,Alta,Desayuno,Pan Dulce,33
+Viernes,Baja,Almuerzo,Conejo Falso,20
+Martes,Media,Cena,Pollo Frito,13
+Viernes,Baja,Cena,Pizza,10
+Miércoles,Alta,Cena,Espagueti,45
+Miércoles,Alta,Cena,Pollo Frito,39
+Lunes,Alta,Cena,Pizza,26
+Jueves,Baja,Desayuno,Hot Cakes,11
+Viernes,Baja,Desayuno,Hot Cakes,5
+Martes,Media,Desayuno,Desayuno Americano,12
+Lunes,Baja,Desayuno,Desayuno Americano,15
+Lunes,Alta,Cena,Hamburguesa,27
+Sábado,Alta,Desayuno,Pan Dulce,43
+Miércoles,Media,Almuerzo,Conejo Falso,25
+Sábado,Media,Almuerzo,Pampaku,10
+Miércoles,Media,Cena,Hamburguesa,30
+Miércoles,Baja,Almuerzo,Conejo Falso,11
+Domingo,Media,Almuerzo,Pampaku,24
+Domingo,Baja,Desayuno,Pan Dulce,16
+Sábado,Media,Desayuno,Jugo de Naranja,18
+Viernes,Media,Almuerzo,Conejo Falso,16
+Martes,Baja,Almuerzo,Silpancho,16
+Miércoles,Alta,Cena,Espagueti,22
+Lunes,Baja,Almuerzo,Pampaku,15
+Jueves,Alta,Desayuno,Pan Dulce,48
+Domingo,Alta,Almuerzo,Conejo Falso,23
+Martes,Media,Cena,Espagueti,26
+Viernes,Alta,Cena,Pollo Frito,34
+Martes,Alta,Cena,Pollo Frito,38
+Viernes,Media,Desayuno,Hot Cakes,27
+Jueves,Alta,Desayuno,Hot Cakes,45
+Jueves,Alta,Desayuno,Desayuno Americano,26
+Sábado,Baja,Desayuno,Cereales,13
+Miércoles,Alta,Desayuno,Jugo de Naranja,37
+Miércoles,Alta,Almuerzo,Silpancho,45
+Jueves,Baja,Almuerzo,Conejo Falso,7
+Miércoles,Alta,Desayuno,Cereales,43
+Sábado,Alta,Desayuno,Desayuno Americano,39
+Miércoles,Baja,Cena,Hamburguesa,12
+Sábado,Media,Desayuno,Pan Dulce,15
+Domingo,Media,Desayuno,Cereales,11
+Jueves,Baja,Desayuno,Pan Dulce,5
+Martes,Baja,Cena,Papas a la Francesa,13
+Sábado,Alta,Cena,Espagueti,39
+Martes,Baja,Cena,Pollo Frito,16
+Sábado,Baja,Almuerzo,Piquemacho,18
+Viernes,Baja,Desayuno,Desayuno Americano,10
+Lunes,Media,Desayuno,Cereales,10
+Domingo,Media,Almuerzo,Chicharrón,25
+Martes,Alta,Almuerzo,Pampaku,25
+Martes,Baja,Almuerzo,Chicharrón,6
+Miércoles,Media,Desayuno,Cereales,22
+Jueves,Alta,Cena,Papas a la Francesa,47
+Martes,Alta,Desayuno,Desayuno Americano,43
+Jueves,Baja,Cena,Pollo Frito,15
+Miércoles,Baja,Almuerzo,Chicharrón,12
+Miércoles,Baja,Almuerzo,Silpancho,8
+Miércoles,Media,Desayuno,Desayuno Americano,11
+Viernes,Media,Desayuno,Desayuno Americano,19
+Miércoles,Media,Almuerzo,Chicharrón,19
+Martes,Media,Cena,Pollo Frito,11
+Miércoles,Media,Desayuno,Desayuno Americano,30
+Jueves,Baja,Cena,Espagueti,11
+Lunes,Baja,Almuerzo,Piquemacho,10
+Sábado,Media,Cena,Hamburguesa,29
+Sábado,Alta,Cena,Espagueti,37
+Domingo,Baja,Cena,Pizza,20
+Martes,Media,Cena,Pizza,10
+Jueves,Alta,Almuerzo,Pampaku,32
+Sábado,Media,Desayuno,Hot Cakes,14
+Miércoles,Media,Cena,Papas a la Francesa,28
+Domingo,Baja,Almuerzo,Pampaku,5
+Jueves,Media,Cena,Espagueti,19
+Sábado,Alta,Cena,Papas a la Francesa,21
+Viernes,Alta,Almuerzo,Conejo Falso,21
+Domingo,Alta,Almuerzo,Conejo Falso,40
+Domingo,Baja,Cena,Hamburguesa,14
+Lunes,Media,Cena,Espagueti,26
+Domingo,Media,Desayuno,Cereales,28
+Lunes,Alta,Almuerzo,Piquemacho,41
+Miércoles,Media,Almuerzo,Silpancho,23
+Viernes,Baja,Almuerzo,Pampaku,19
+Sábado,Alta,Almuerzo,Conejo Falso,45
+Martes,Baja,Desayuno,Desayuno Americano,19
+Domingo,Baja,Desayuno,Cereales,19
+Martes,Media,Desayuno,Hot Cakes,28
+Martes,Alta,Cena,Espagueti,48
+Miércoles,Alta,Cena,Pollo Frito,27
+Sábado,Baja,Desayuno,Hot Cakes,6
+Jueves,Media,Cena,Pizza,11
+Sábado,Media,Almuerzo,Silpancho,21
+Lunes,Alta,Desayuno,Desayuno Americano,45
+Domingo,Alta,Cena,Pollo Frito,35
+Miércoles,Alta,Cena,Espagueti,43
+Martes,Baja,Desayuno,Desayuno Americano,13
+Jueves,Baja,Desayuno,Cereales,9
+Martes,Alta,Almuerzo,Conejo Falso,23
+Miércoles,Alta,Cena,Pizza,31
+Viernes,Baja,Cena,Papas a la Francesa,5
+Sábado,Baja,Cena,Pollo Frito,11
+Lunes,Baja,Almuerzo,Conejo Falso,11
+Sábado,Baja,Cena,Papas a la Francesa,19
+Miércoles,Alta,Desayuno,Jugo de Naranja,41
+Jueves,Media,Desayuno,Cereales,18
+Sábado,Alta,Almuerzo,Piquemacho,38
+Jueves,Alta,Almuerzo,Piquemacho,31
+Viernes,Alta,Cena,Espagueti,47
+Miércoles,Media,Cena,Pollo Frito,11
+Sábado,Alta,Almuerzo,Chicharrón,32
+Martes,Baja,Cena,Pizza,19
+Viernes,Alta,Cena,Pollo Frito,50
+Domingo,Alta,Cena,Pizza,34
+Domingo,Media,Desayuno,Hot Cakes,16
+Sábado,Alta,Almuerzo,Chicharrón,41
+Martes,Media,Cena,Papas a la Francesa,23
+Martes,Media,Desayuno,Pan Dulce,30
+Viernes,Media,Desayuno,Cereales,20
+Lunes,Baja,Cena,Pollo Frito,6
+Jueves,Alta,Desayuno,Jugo de Naranja,34
+Viernes,Alta,Cena,Hamburguesa,29
+Domingo,Baja,Almuerzo,Pampaku,17
+Viernes,Baja,Desayuno,Pan Dulce,16
+Miércoles,Baja,Cena,Pollo Frito,14
+Lunes,Baja,Desayuno,Hot Cakes,17
+Viernes,Baja,Desayuno,Hot Cakes,10
+Miércoles,Media,Cena,Pizza,23
+Jueves,Media,Cena,Espagueti,16
+Sábado,Alta,Almuerzo,Piquemacho,50
+Viernes,Alta,Almuerzo,Silpancho,21
+Lunes,Media,Desayuno,Pan Dulce,27
+Sábado,Media,Almuerzo,Silpancho,18
+Martes,Baja,Desayuno,Desayuno Americano,11
+Lunes,Media,Almuerzo,Conejo Falso,23
+Miércoles,Baja,Desayuno,Pan Dulce,20
+Lunes,Alta,Desayuno,Desayuno Americano,42
+Martes,Media,Desayuno,Desayuno Americano,24
+Domingo,Baja,Almuerzo,Chicharrón,13
+Martes,Alta,Cena,Hamburguesa,26
+Jueves,Media,Desayuno,Hot Cakes,19
+Lunes,Media,Desayuno,Jugo de Naranja,14
+Domingo,Baja,Cena,Espagueti,15
+Miércoles,Baja,Desayuno,Desayuno Americano,9
+Sábado,Alta,Cena,Hamburguesa,30
+Martes,Baja,Desayuno,Pan Dulce,16
+Miércoles,Baja,Cena,Hamburguesa,14
+Sábado,Alta,Cena,Espagueti,45
+Viernes,Alta,Desayuno,Pan Dulce,33
+Lunes,Alta,Desayuno,Pan Dulce,47
+Domingo,Baja,Cena,Hamburguesa,13
+Lunes,Alta,Desayuno,Hot Cakes,50
+Lunes,Alta,Cena,Espagueti,31
+Martes,Media,Almuerzo,Pampaku,25
+Viernes,Media,Cena,Pollo Frito,11
+Domingo,Baja,Cena,Pollo Frito,7
+Domingo,Baja,Cena,Hamburguesa,17
+Miércoles,Media,Cena,Hamburguesa,15
+Lunes,Baja,Almuerzo,Piquemacho,19
+Miércoles,Alta,Almuerzo,Pampaku,37
+Viernes,Alta,Almuerzo,Pampaku,21
+Domingo,Media,Cena,Pizza,10
+Martes,Media,Almuerzo,Chicharrón,26
+Martes,Media,Desayuno,Pan Dulce,14
+Domingo,Baja,Almuerzo,Conejo Falso,16
+Sábado,Media,Desayuno,Cereales,10
+Martes,Media,Almuerzo,Pampaku,28
+Domingo,Baja,Cena,Hamburguesa,18
+Lunes,Alta,Almuerzo,Chicharrón,33
+Jueves,Media,Almuerzo,Pampaku,11
+Viernes,Baja,Cena,Pollo Frito,12
+Miércoles,Baja,Cena,Papas a la Francesa,15
+Jueves,Baja,Almuerzo,Conejo Falso,18
+Jueves,Media,Desayuno,Desayuno Americano,12
+Jueves,Media,Almuerzo,Chicharrón,15
+Sábado,Alta,Cena,Espagueti,48
+Domingo,Baja,Desayuno,Hot Cakes,9
+Martes,Alta,Cena,Pizza,30
+Viernes,Media,Cena,Hamburguesa,18
+Lunes,Media,Cena,Hamburguesa,24
+Jueves,Media,Desayuno,Pan Dulce,29
+Lunes,Alta,Cena,Pizza,38
+Lunes,Alta,Almuerzo,Chicharrón,24
+Sábado,Baja,Cena,Hamburguesa,7
+Domingo,Media,Almuerzo,Piquemacho,10
+Viernes,Alta,Desayuno,Jugo de Naranja,33
+Lunes,Alta,Almuerzo,Silpancho,35
+Jueves,Alta,Desayuno,Desayuno Americano,29
+Jueves,Media,Almuerzo,Conejo Falso,30
+Jueves,Media,Cena,Pizza,14
+Viernes,Media,Cena,Espagueti,24
+Sábado,Baja,Almuerzo,Pampaku,9
+Domingo,Alta,Desayuno,Pan Dulce,20
+Domingo,Alta,Almuerzo,Pampaku,45
+Martes,Media,Almuerzo,Piquemacho,17
+Martes,Alta,Cena,Hamburguesa,41
+Miércoles,Baja,Almuerzo,Silpancho,20
+Domingo,Alta,Almuerzo,Silpancho,26
+Jueves,Baja,Desayuno,Jugo de Naranja,18
+Sábado,Media,Cena,Espagueti,22
+Viernes,Alta,Cena,Hamburguesa,24
+Domingo,Baja,Desayuno,Desayuno Americano,10
+Viernes,Baja,Almuerzo,Conejo Falso,18
+Lunes,Alta,Almuerzo,Piquemacho,39
+Sábado,Alta,Cena,Pollo Frito,30
+Martes,Baja,Desayuno,Hot Cakes,6
+Lunes,Baja,Desayuno,Cereales,20
+Miércoles,Alta,Almuerzo,Silpancho,44
+Viernes,Alta,Cena,Espagueti,48
+Jueves,Media,Desayuno,Hot Cakes,16
+Jueves,Alta,Desayuno,Desayuno Americano,49
+Jueves,Baja,Cena,Espagueti,8
+Jueves,Media,Almuerzo,Silpancho,24
+Miércoles,Baja,Desayuno,Desayuno Americano,8
+Miércoles,Baja,Almuerzo,Chicharrón,19
+Sábado,Baja,Desayuno,Jugo de Naranja,10
+Jueves,Media,Almuerzo,Conejo Falso,28
+Miércoles,Alta,Cena,Hamburguesa,20
+Lunes,Alta,Desayuno,Desayuno Americano,24
+Viernes,Media,Cena,Hamburguesa,26
+Domingo,Alta,Almuerzo,Silpancho,35
+Miércoles,Alta,Almuerzo,Chicharrón,30
+Jueves,Alta,Cena,Hamburguesa,20
+Sábado,Media,Almuerzo,Chicharrón,10
+Lunes,Alta,Cena,Papas a la Francesa,27
+Lunes,Alta,Almuerzo,Silpancho,48
+Jueves,Baja,Cena,Papas a la Francesa,6
+Domingo,Media,Cena,Pizza,18
+Martes,Baja,Almuerzo,Pampaku,17
+Domingo,Baja,Cena,Espagueti,13
+Martes,Alta,Almuerzo,Conejo Falso,32
+Viernes,Media,Almuerzo,Piquemacho,19
+Viernes,Media,Desayuno,Pan Dulce,27
+Domingo,Baja,Desayuno,Hot Cakes,5
+Jueves,Alta,Cena,Hamburguesa,40
+Miércoles,Alta,Cena,Pizza,41
+Jueves,Media,Almuerzo,Piquemacho,22
+Jueves,Alta,Desayuno,Cereales,22
+Lunes,Alta,Desayuno,Pan Dulce,27
+Lunes,Baja,Cena,Pollo Frito,20
+Sábado,Baja,Cena,Hamburguesa,13
+Lunes,Alta,Desayuno,Jugo de Naranja,41
+Domingo,Baja,Cena,Espagueti,7
+Jueves,Media,Cena,Pollo Frito,29
+Viernes,Alta,Desayuno,Hot Cakes,31
+Lunes,Alta,Cena,Pizza,32
+Viernes,Media,Desayuno,Hot Cakes,16
+Miércoles,Baja,Desayuno,Pan Dulce,8
+Domingo,Alta,Almuerzo,Pampaku,43
+Jueves,Alta,Almuerzo,Piquemacho,31
+Sábado,Media,Desayuno,Jugo de Naranja,19
+Viernes,Baja,Desayuno,Jugo de Naranja,20
+Lunes,Alta,Desayuno,Pan Dulce,49
+Viernes,Baja,Desayuno,Hot Cakes,10
+Sábado,Media,Almuerzo,Chicharrón,15
+Martes,Media,Desayuno,Hot Cakes,27
+Jueves,Alta,Cena,Pollo Frito,41
+Jueves,Baja,Desayuno,Desayuno Americano,9
+Viernes,Alta,Desayuno,Jugo de Naranja,23
+Domingo,Media,Almuerzo,Conejo Falso,30
+Sábado,Alta,Almuerzo,Piquemacho,41
+Miércoles,Media,Cena,Espagueti,16
+Sábado,Alta,Almuerzo,Pampaku,31
+Miércoles,Media,Desayuno,Pan Dulce,13
+Lunes,Media,Almuerzo,Pampaku,25
+Jueves,Media,Desayuno,Cereales,23
+Jueves,Media,Cena,Pollo Frito,20
+Martes,Alta,Desayuno,Cereales,25
+Viernes,Alta,Almuerzo,Pampaku,32
+Domingo,Baja,Desayuno,Desayuno Americano,19
+Sábado,Alta,Almuerzo,Pampaku,43
+Lunes,Baja,Desayuno,Cereales,12
+Domingo,Alta,Desayuno,Pan Dulce,20
+Miércoles,Alta,Cena,Pizza,34
+Sábado,Alta,Almuerzo,Silpancho,32
+Miércoles,Media,Cena,Pollo Frito,23
+Domingo,Baja,Almuerzo,Conejo Falso,10
+Martes,Media,Desayuno,Hot Cakes,23
+Jueves,Media,Desayuno,Desayuno Americano,20
+Lunes,Baja,Cena,Pollo Frito,18
+Domingo,Baja,Desayuno,Cereales,19
+Domingo,Alta,Desayuno,Hot Cakes,50
+Miércoles,Baja,Cena,Espagueti,6
+Lunes,Media,Desayuno,Pan Dulce,12
+Miércoles,Baja,Desayuno,Jugo de Naranja,9
+Jueves,Alta,Cena,Hamburguesa,31
+Lunes,Alta,Almuerzo,Pampaku,26
+Viernes,Media,Desayuno,Pan Dulce,21
+Domingo,Media,Desayuno,Jugo de Naranja,23
+Sábado,Baja,Almuerzo,Pampaku,14
+Jueves,Media,Desayuno,Hot Cakes,19
+Martes,Alta,Desayuno,Desayuno Americano,48
+Jueves,Baja,Desayuno,Jugo de Naranja,8
+Lunes,Baja,Desayuno,Pan Dulce,15
+Domingo,Alta,Desayuno,Cereales,20
+Miércoles,Alta,Cena,Espagueti,31
+Sábado,Media,Almuerzo,Conejo Falso,17
+Sábado,Baja,Cena,Papas a la Francesa,6
+Viernes,Alta,Cena,Pollo Frito,30
+Miércoles,Baja,Desayuno,Hot Cakes,11
+Lunes,Alta,Almuerzo,Pampaku,38
+Martes,Media,Desayuno,Jugo de Naranja,21
+Miércoles,Baja,Desayuno,Pan Dulce,14
+Martes,Alta,Desayuno,Cereales,29
+Domingo,Media,Almuerzo,Piquemacho,18
+Jueves,Media,Cena,Papas a la Francesa,21
+Lunes,Alta,Almuerzo,Pampaku,31
+Domingo,Alta,Desayuno,Cereales,32
+Miércoles,Media,Almuerzo,Conejo Falso,10
+Jueves,Alta,Desayuno,Jugo de Naranja,26
+Sábado,Media,Cena,Pollo Frito,30
+Domingo,Baja,Almuerzo,Piquemacho,18
+Viernes,Baja,Almuerzo,Chicharrón,15
+Domingo,Alta,Almuerzo,Silpancho,39
+Viernes,Baja,Desayuno,Desayuno Americano,20
+Jueves,Baja,Cena,Espagueti,13
+Domingo,Baja,Almuerzo,Pampaku,9
+Miércoles,Alta,Almuerzo,Chicharrón,40
+Martes,Alta,Desayuno,Hot Cakes,24
+Martes,Media,Almuerzo,Chicharrón,27
+Jueves,Baja,Cena,Pollo Frito,6
+Lunes,Alta,Desayuno,Desayuno Americano,48
+Jueves,Alta,Almuerzo,Silpancho,26
+Viernes,Alta,Almuerzo,Piquemacho,44
+Lunes,Media,Desayuno,Cereales,30
+Jueves,Baja,Almuerzo,Conejo Falso,16
+Miércoles,Alta,Desayuno,Cereales,40
+Sábado,Media,Cena,Espagueti,22
+Miércoles,Alta,Almuerzo,Silpancho,37
+Miércoles,Media,Cena,Hamburguesa,20
+Martes,Media,Cena,Pizza,28
+Martes,Baja,Cena,Espagueti,7
+Lunes,Baja,Desayuno,Jugo de Naranja,17
+Viernes,Alta,Desayuno,Pan Dulce,37
+Jueves,Alta,Desayuno,Hot Cakes,29
+Domingo,Baja,Almuerzo,Chicharrón,14
+Viernes,Baja,Cena,Espagueti,19
+Domingo,Media,Desayuno,Pan Dulce,27
+Domingo,Alta,Desayuno,Desayuno Americano,43
+Jueves,Baja,Desayuno,Desayuno Americano,14
+Domingo,Baja,Desayuno,Desayuno Americano,18
+Sábado,Alta,Cena,Pollo Frito,21
+Lunes,Media,Almuerzo,Pampaku,14
+Sábado,Media,Almuerzo,Pampaku,28
+Jueves,Media,Cena,Hamburguesa,20
+Sábado,Alta,Desayuno,Desayuno Americano,49
+Viernes,Baja,Almuerzo,Chicharrón,20
+Miércoles,Alta,Cena,Espagueti,29
+Jueves,Baja,Almuerzo,Pampaku,10
+Sábado,Baja,Almuerzo,Silpancho,20
+Lunes,Media,Cena,Pollo Frito,13
+Sábado,Baja,Desayuno,Pan Dulce,6
+Domingo,Baja,Almuerzo,Silpancho,9
+Sábado,Baja,Almuerzo,Conejo Falso,7
+Domingo,Alta,Desayuno,Jugo de Naranja,50
+Viernes,Alta,Desayuno,Hot Cakes,44
+Viernes,Media,Almuerzo,Conejo Falso,13
+Sábado,Media,Cena,Papas a la Francesa,22
+Miércoles,Alta,Cena,Pizza,44
+Sábado,Media,Desayuno,Pan Dulce,12
+Viernes,Alta,Desayuno,Pan Dulce,47
+Viernes,Alta,Cena,Espagueti,35
+Miércoles,Alta,Cena,Pizza,24
+Martes,Alta,Cena,Papas a la Francesa,44
+Jueves,Baja,Cena,Pizza,18
+Miércoles,Media,Almuerzo,Chicharrón,20
+Domingo,Baja,Almuerzo,Chicharrón,18
+Jueves,Media,Almuerzo,Pampaku,19
+Lunes,Media,Desayuno,Cereales,16
+Lunes,Alta,Almuerzo,Pampaku,31
+Viernes,Media,Almuerzo,Conejo Falso,11
+Martes,Media,Almuerzo,Silpancho,10
+Martes,Alta,Desayuno,Cereales,48
+Jueves,Baja,Desayuno,Cereales,16
+Jueves,Alta,Almuerzo,Chicharrón,44
+Domingo,Media,Cena,Hamburguesa,30
+Domingo,Baja,Cena,Pizza,5
+Martes,Baja,Cena,Pollo Frito,8
+Jueves,Baja,Desayuno,Pan Dulce,20
+Jueves,Alta,Almuerzo,Pampaku,27
+Miércoles,Baja,Desayuno,Desayuno Americano,12
+Miércoles,Alta,Cena,Espagueti,26
+Viernes,Alta,Desayuno,Jugo de Naranja,46
+Miércoles,Media,Desayuno,Pan Dulce,17
+Miércoles,Baja,Desayuno,Jugo de Naranja,19
+Lunes,Baja,Cena,Pollo Frito,15
+Miércoles,Media,Desayuno,Hot Cakes,27
+Martes,Baja,Cena,Papas a la Francesa,6
+Domingo,Alta,Desayuno,Hot Cakes,49
+Martes,Alta,Cena,Pizza,50
+Domingo,Media,Almuerzo,Chicharrón,22
+Domingo,Baja,Desayuno,Desayuno Americano,11
+Martes,Media,Cena,Pollo Frito,12
+Jueves,Alta,Almuerzo,Silpancho,33
+Miércoles,Alta,Cena,Hamburguesa,35
+Domingo,Baja,Almuerzo,Pampaku,8
+Lunes,Baja,Almuerzo,Silpancho,8
+Jueves,Alta,Desayuno,Cereales,29
+Domingo,Media,Almuerzo,Silpancho,22
+Viernes,Baja,Cena,Espagueti,6
+Martes,Alta,Desayuno,Cereales,24
+Miércoles,Media,Desayuno,Desayuno Americano,25
+Domingo,Media,Almuerzo,Chicharrón,10
+Domingo,Media,Almuerzo,Conejo Falso,14
+Miércoles,Alta,Desayuno,Hot Cakes,43
+Martes,Alta,Cena,Hamburguesa,33
+Lunes,Alta,Almuerzo,Silpancho,20
+Lunes,Alta,Cena,Hamburguesa,40
+Martes,Media,Almuerzo,Conejo Falso,16
+Jueves,Baja,Almuerzo,Piquemacho,16
+Miércoles,Alta,Desayuno,Hot Cakes,47
+Lunes,Baja,Desayuno,Desayuno Americano,15
+Martes,Baja,Cena,Espagueti,10
+Martes,Media,Desayuno,Jugo de Naranja,28
+Domingo,Media,Desayuno,Jugo de Naranja,23
+Martes,Media,Desayuno,Pan Dulce,12
+Lunes,Alta,Cena,Pollo Frito,49
+Miércoles,Baja,Desayuno,Hot Cakes,12
+Lunes,Alta,Desayuno,Pan Dulce,25
+Viernes,Baja,Almuerzo,Chicharrón,8
+Lunes,Alta,Almuerzo,Silpancho,23
+Viernes,Alta,Cena,Pollo Frito,30
+Sábado,Media,Cena,Pollo Frito,16
+Lunes,Media,Almuerzo,Pampaku,11
+Jueves,Baja,Cena,Pizza,18
+Jueves,Media,Desayuno,Jugo de Naranja,13
+Martes,Media,Almuerzo,Pampaku,30
+Martes,Media,Almuerzo,Pampaku,14
+Domingo,Media,Desayuno,Pan Dulce,10
+Jueves,Media,Almuerzo,Conejo Falso,28
+Domingo,Media,Almuerzo,Conejo Falso,16
+Viernes,Alta,Desayuno,Cereales,35
+Sábado,Media,Cena,Espagueti,29

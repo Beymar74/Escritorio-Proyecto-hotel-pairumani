@@ -1,7 +1,17 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import "./HeaderDesktop.css";
+import { useAuthStore } from "@/app/store";
+
 const HeaderDesktop = () => {
+  const pathname = usePathname();
+  const { nameSelected, avatarSelected } = useAuthStore();
+
+  const name = nameSelected || "Invitado";
+  const avatar = avatarSelected || "/default-avatar.png";
+
   return (
     <div className="headersini">
       <div className="logini">
@@ -20,14 +30,14 @@ const HeaderDesktop = () => {
       <div className="sesion">
         <div className="nombreycargo">
           <div className="cajacargo">
-            <p className="nombresini">Beymar Mamani</p>
+            <p className="nombresini">{name}</p>
             <p className="cargosini">Admin</p>
           </div>
         </div>
         <div className="fotini">
           <Image
             className="usuarini"
-            src="/image 23.png"
+            src={avatar}
             width={500}
             height={500}
             alt={"Foto Usuario"}
