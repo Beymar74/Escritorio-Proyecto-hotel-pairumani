@@ -21,7 +21,6 @@ interface Orden {
   platos: Plato[];
 }
 
-
 interface User {
   username: string;
   email: string;
@@ -38,10 +37,14 @@ const Tarjlistapedidos: React.FC<{ order: Orden; user: User }> = ({ order, user 
       orden,
       lugar,
       fecha,
-      hora,
-      estado:"enPreparacion",
-      total,
-      estado:"enPreparacion",
+      hora: {
+        valor: hora,
+        estado: "enPreparacion", // Estado asociado a hora
+      },
+      total: {
+        valor: total,
+        estado: "enPreparacion", // Estado asociado a total
+      },
       id: orden.toString(),
       imagenperfil: user.imagenPerfil,
       nhabitacionOpersonas: nhabitacionOpersonas,
@@ -82,11 +85,10 @@ const Tarjlistapedidos: React.FC<{ order: Orden; user: User }> = ({ order, user 
       </div>
 
       <div className="divdatosdelpedido">
-          <p className="fecha">{`${fecha}, ${hora}`}</p>
-          <p className="textoverde">Entrega: {lugar}</p>
-          <p className="textoverde">#Número: {nhabitacionOpersonas}</p>
-          <p className="textoverde">Total de la orden: Bs. {total}</p>
-          
+        <p className="fecha">{`${fecha}, ${hora}`}</p>
+        <p className="textoverde">Entrega: {lugar}</p>
+        <p className="textoverde">#Número: {nhabitacionOpersonas}</p>
+        <p className="textoverde">Total de la orden: Bs. {total}</p>
 
         <div className="botonchecksito" onClick={handlePost}>
           <div className="rellenobotonsinii">
