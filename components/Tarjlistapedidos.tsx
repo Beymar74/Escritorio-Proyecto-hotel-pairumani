@@ -39,6 +39,7 @@ const Tarjlistapedidos: React.FC<{ order: Orden; user: User }> = ({ order, user 
       fecha,
       hora,
       total,
+      estado:"enPreparacion",
       id: orden.toString(),
       imagenperfil: user.imagenPerfil,
       nhabitacionOpersonas: lugar === "Comedor" ? nhabitacionOpersonas : "-----",
