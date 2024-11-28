@@ -24,7 +24,9 @@ type PedidosState = {
   entregado: PedidoType[];
 };
 
+
 const MAX_ITEMS_PER_BLOCK = 10;
+
 
 const Estadoorden: React.FC = () => {
   const [pedidos, setPedidos] = useState<PedidosState>({
