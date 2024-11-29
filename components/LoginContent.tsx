@@ -35,7 +35,7 @@ const LoginContent = () => {
 
     if (usuarioEncontrado && usuarioEncontrado.password === password) {
       guardarName(usuarioEncontrado.name);
-      guardarAvatar(usuarioEncontrado.avatar); // Guardar el avatar del usuario logeado
+      guardarAvatar(usuarioEncontrado.avatar); 
       router.push("/reservaciones");
     } else {
       alert("Usuario o contraseña incorrectos");

@@ -61,25 +61,6 @@ const Opciones = () => {
           </div>
         </button>
       </Link>
-
-      <Link href={"/notificaciones"} passHref>
-        <button type="submit" className="cajaopcionalter">
-          <div className="subcajaopcion">
-            <div className="imagen">
-              <Image
-                className="imagenopcion"
-                src="/campanita.png"
-                width={500}
-                height={500}
-                alt={"Logo Hotel Pairumani"}
-              />
-            </div>
-            <div className="texto">
-              <p className="textini">Notificaciones</p>
-            </div>
-          </div>
-        </button>
-      </Link>
     </div>
   );
 };

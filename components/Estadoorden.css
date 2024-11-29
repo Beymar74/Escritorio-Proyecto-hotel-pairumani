@@ -1,18 +1,21 @@
-/* Estilo general del contenedor */
+
 .estado {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 16px;
-  background-color: #f9f9f9; /* Fondo claro */
-  border-radius: 8px;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* Apartado principal */
 .apartado {
   text-align: center;
   margin-bottom: 16px;
+  height: auto;
+  width: auto;
 }
 
 .titapartado {
@@ -35,7 +38,7 @@
 .faseestado {
   flex:1; /* Permite que los bloques ocupen el mismo espacio */
  /* Tamaño mínimo para pantallas pequeñas */
-  width:100% ; /* Controlar tamaño máximo */
+  width:auto ; /* Controlar tamaño máximo */
   background-color: #fff; /* Fondo blanco */
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -87,3 +90,4 @@
   background-color: #4caf50;
   transition: width 0.3s ease;
 }
+

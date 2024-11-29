@@ -11,6 +11,19 @@
   border: 1px solid rgba(0, 0, 0, 0.46);
   background: #fff;
 }
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  width: 1030px;
+  height: 640px;
+  max-width: 960px;
+  gap: 20px;
+  border-radius: 12px;
+  background: rgba(232, 237, 245, 0.37);
+  padding: 20px;
+  
+}
 .divlistaplatos {
   display: flex;
   width: 588px;

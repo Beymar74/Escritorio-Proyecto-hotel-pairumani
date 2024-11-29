@@ -21,7 +21,6 @@ interface Orden {
   platos: Plato[];
 }
 
-
 interface User {
   username: string;
   email: string;
@@ -39,8 +38,8 @@ const Tarjlistapedidos: React.FC<{ order: Orden; user: User }> = ({ order, user 
       lugar,
       fecha,
       hora,
-      estado:"enPreparacion",
       total,
+      estado:"enPreparacion",
       id: orden.toString(),
       imagenperfil: user.imagenPerfil,
       nhabitacionOpersonas: nhabitacionOpersonas,
