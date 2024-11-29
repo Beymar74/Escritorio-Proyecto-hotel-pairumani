@@ -2,12 +2,13 @@
 .estado {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 16px;
-  width: auto;
-  height: auto;
-  background-color: #f9f9f9; /* Fondo claro */
-  border-radius: 8px;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
