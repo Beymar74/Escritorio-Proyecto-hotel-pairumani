@@ -1,4 +1,4 @@
-/* Estilo general del contenedor */
+
 .estado {
   display: flex;
   flex-direction: column;
@@ -11,8 +11,6 @@
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* Apartado principal */
 .apartado {
   text-align: center;
   margin-bottom: 16px;

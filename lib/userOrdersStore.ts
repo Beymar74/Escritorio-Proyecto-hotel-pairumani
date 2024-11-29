@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-// Define tipos para las órdenes y los estados
+
 type OrderType = {
   id: string;
   plaimagen: string;
@@ -21,7 +21,7 @@ interface StoreState {
   moveOrder: (id: string, from: keyof OrdersState, to: keyof OrdersState) => void;
 }
 
-// Crear el store con Zustand
+
 const useOrdersStore = create<StoreState>((set) => ({
   orders: {
     enPreparacion: [],
@@ -29,10 +29,10 @@ const useOrdersStore = create<StoreState>((set) => ({
     entregado: [],
   },
 
-  // Método para establecer órdenes
+
   setOrders: (newOrders) => set({ orders: newOrders }),
 
-  // Método para mover una orden de un estado a otro
+
   moveOrder: (id, from, to) =>
     set((state) => {
       const orderToMove = state.orders[from].find((order) => order.id === id);

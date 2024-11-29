@@ -11,7 +11,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Contenedor combinado de la barra y la información */
 .info-bar-container {
   display: flex;
   flex-direction: row;
@@ -23,8 +22,6 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   align-items: flex-start;
 }
-
-/* Información */
 .info-container {
   flex: 1;
   padding: 20px;
@@ -45,7 +42,7 @@
   color: #34495e;
 }
 
-/* Botones de filtro */
+
 .filter-buttons {
   display: flex;
   gap: 10px;
@@ -68,7 +65,7 @@
   color: white;
 }
 
-/* Botón de reporte */
+
 .report-button {
   padding: 10px 20px;
   border-radius: 5px;
@@ -86,7 +83,7 @@
   color: white;
 }
 
-/* Gráfica de barras */
+
 .bar-chart {
   flex: 2;
   display: flex;
@@ -94,7 +91,7 @@
   align-items: center;
 }
 
-/* Contenedor con scroll para gráficas */
+
 .charts-scroll-container {
   display: flex;
   flex-direction: column;
@@ -123,7 +120,7 @@
   background: #555;
 }
 
-/* Gráfica de pastel */
+
 .pie-chart {
   display: flex;
   justify-content: center;
@@ -135,7 +132,6 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Leyenda adicional (opcional) */
 .legend-container {
   display: flex;
   justify-content: center;

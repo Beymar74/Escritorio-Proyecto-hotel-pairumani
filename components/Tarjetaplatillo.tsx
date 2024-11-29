@@ -27,7 +27,6 @@ const Tarjetaplatillo: React.FC<PedidoProps> = ({ pedido, movePedido }) => {
 
   return (
     <div className="tarjeta-platillo">
-      {/* Platillos */}
       <div className="izq">
       <div className="platillos">
         {pedido.ordenpla.map((platillo, index) => (
@@ -41,8 +40,6 @@ const Tarjetaplatillo: React.FC<PedidoProps> = ({ pedido, movePedido }) => {
         ))}
       </div>
       
-      
-      {/* Información del pedido */}
       <div className="pedido-info">
         <h3>Cliente: {pedido.username}</h3>
         <p>{pedido.lugar}: {pedido.nhabitacionOpersonas}</p>
@@ -51,7 +48,6 @@ const Tarjetaplatillo: React.FC<PedidoProps> = ({ pedido, movePedido }) => {
       </div>
       
 
-      {/* Botón para cambiar estado */}
       <button onClick={handleMove} className="actualizar-boton">
         {pedido.estado === "enPreparacion"
           ? "Mover a Listo"
