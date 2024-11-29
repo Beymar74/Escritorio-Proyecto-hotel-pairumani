@@ -1,8 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./Dashboard.css";
-import { PieChart, Pie, Cell, Tooltip } from "recharts";
+import { PieChart, Pie, Cell, Tooltip, BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend } from "recharts";
+import { jsPDF } from "jspdf";
+import html2canvas from "html2canvas";
 
 type DataItem = {
   name: string;
@@ -15,6 +17,8 @@ type Data = {
 
 const Dashboard = () => {
   const [activeFilter, setActiveFilter] = useState<string>("Todo");
+  const barChartRef = useRef<HTMLDivElement>(null);
+  const pieChartRef = useRef<HTMLDivElement>(null);
 
   const data: Data = {
     Desayuno: [
@@ -86,29 +90,89 @@ const Dashboard = () => {
     currentData[0]
   );
 
+  const generateReportPDF = async () => {
+    const doc = new jsPDF();
+
+    // Agregar texto básico al PDF
+    doc.text("Reporte de Predicción de Demanda", 10, 10);
+    doc.text(`Total de pedidos: ${totalPedidos}`, 10, 20);
+    doc.text(`Plato más popular: ${platoPopular.name} (${platoPopular.value})`, 10, 30);
+    doc.text(`Plato menos popular: ${platoMenosPopular.name} (${platoMenosPopular.value})`, 10, 40);
+
+    // Capturar gráfica de barras
+    if (barChartRef.current) {
+      const barChartCanvas = await html2canvas(barChartRef.current);
+      const barChartImg = barChartCanvas.toDataURL("image/png");
+      doc.addImage(barChartImg, "PNG", 10, 50, 180, 90); // Ajusta las coordenadas y el tamaño
+    }
+
+    // Capturar gráfica de pastel
+    if (pieChartRef.current) {
+      const pieChartCanvas = await html2canvas(pieChartRef.current);
+      const pieChartImg = pieChartCanvas.toDataURL("image/png");
+      doc.addImage(pieChartImg, "PNG", 10, 150, 180, 90); // Ajusta las coordenadas y el tamaño
+    }
+
+    // Descargar el PDF
+    doc.save("reporte_platos.pdf");
+  };
+
   return (
     <div className="dashboard">
-      <div className="info-container">
-        <h2>Dashboard de Predicción de Demanda</h2>
-        <div className="filter-buttons">
-          {["Desayuno", "Almuerzo", "Cena", "Todo"].map((filter) => (
-            <button
-              key={filter}
-              onClick={() => setActiveFilter(filter)}
-              className={activeFilter === filter ? "active" : ""}
-            >
-              {filter}
-            </button>
-          ))}
+      <div className="info-bar-container">
+        <div className="info-container">
+          <h2>Dashboard de Predicción de Demanda</h2>
+          <div className="filter-buttons">
+            {["Desayuno", "Almuerzo", "Cena", "Todo"].map((filter) => (
+              <button
+                key={filter}
+                onClick={() => setActiveFilter(filter)}
+                className={activeFilter === filter ? "active" : ""}
+              >
+                {filter}
+              </button>
+            ))}
+          </div>
+          <div>
+            <p>Total de pedidos: {totalPedidos}</p>
+            <p>Plato más popular: {platoPopular?.name} ({platoPopular?.value})</p>
+            <p>Plato menos popular: {platoMenosPopular?.name} ({platoMenosPopular?.value})</p>
+          </div>
+          <button className="report-button" onClick={generateReportPDF}>
+            Generar Reporte
+          </button>
         </div>
-        <div>
-          <p>Total de pedidos: {totalPedidos}</p>
-          <p>Plato más popular: {platoPopular?.name}</p>
-          <p>Plato menos popular: {platoMenosPopular?.name}</p>
+        <div className="bar-chart" ref={barChartRef}>
+          <BarChart
+            width={500}
+            height={300}
+            data={currentData}
+            margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="value" fill="#82ca9d" background={{ fill: "#eee" }}>
+              {currentData.map((entry, index) => (
+                <Cell
+                  key={`cell-${index}`}
+                  fill={
+                    entry.name === platoPopular.name
+                      ? "#FF5733"
+                      : entry.name === platoMenosPopular.name
+                      ? "#C70039"
+                      : "#82ca9d"
+                  }
+                />
+              ))}
+            </Bar>
+          </BarChart>
         </div>
       </div>
-      <div className="chart-container">
-        <PieChart width={400} height={400}>
+      <div className="pie-chart" ref={pieChartRef}>
+        <PieChart width={600} height={400}>
           <Pie
             data={currentData}
             dataKey="value"
@@ -117,10 +181,20 @@ const Dashboard = () => {
             cy="50%"
             outerRadius={150}
             fill="#8884d8"
-            label
+            label={({ name, value }) => `${name}: ${value}`}
+            labelLine={true}
           >
             {currentData.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              <Cell
+                key={`cell-${index}`}
+                fill={
+                  entry.name === platoPopular.name
+                    ? "#FF5733"
+                    : entry.name === platoMenosPopular.name
+                    ? "#C70039"
+                    : COLORS[index % COLORS.length]
+                }
+              />
             ))}
           </Pie>
           <Tooltip />
