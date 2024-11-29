@@ -75,7 +75,7 @@ const Estadoorden: React.FC = () => {
         newState.entregado.push({ ...pedidoToMove, estado: "entregado" });
       } else {
         alert("¡El bloque está lleno! No se pueden agregar más pedidos.");
-        return prev; // No hacemos cambios si el bloque está lleno
+        return prev; 
       }
 
       return newState;
@@ -95,7 +95,6 @@ const Estadoorden: React.FC = () => {
       
 
       <div className="movil">
-        {/* En Preparación */}
         <div className="faseestado">
           <p className="textofase">En Preparación</p>
           <div className="barraProgreso">
@@ -111,7 +110,6 @@ const Estadoorden: React.FC = () => {
           </div>
         </div>
 
-        {/* Listo */}
         <div className="faseestado">
           <p className="textofase">Listo </p>
           <div className="barraProgreso">
@@ -127,7 +125,6 @@ const Estadoorden: React.FC = () => {
           </div>
         </div>
 
-        {/* Entregado */}
         <div className="faseestado">
           <p className="textofase">Entregado </p>
           <div className="barraProgreso">
